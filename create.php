@@ -12,10 +12,18 @@
 
 <body>
 
-    <div class="container">
+    <nav>
+        <div class="navbar-title">Tambah Data Siswa</div>
+        <div class="navbar-buttons">
+            <a class="btnLogout" href="detail.php">Kembali</a>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 70px;">
         <?php include "conn.php"; ?>
         <h1>Tambah data siswa</h1>
-        <p>Isikan semua data dengan benar, lalu tekan simpan</p>
+        <p style="text-align: center; font-family: Arial, sans-serif;">Isikan semua data dengan benar, lalu tekan simpan
+        </p>
 
         <form action="action_create.php" method="post" enctype="multipart/form-data">
 
@@ -23,13 +31,13 @@
                 <tr>
                     <td>Username</td>
                     <td>:</td>
-                    <td><input type="name" name="username" required></td>
+                    <td><input type="text" name="username" required></td>
                 </tr>
 
                 <tr>
                     <td>Password</td>
                     <td>:</td>
-                    <td><input type="password" name="password" required></td>
+                    <td><input type="text" name="password" required></td>
                 </tr>
 
                 <tr>
@@ -48,11 +56,6 @@
         </form>
     </div>
 
-    <div>
-        <button style="position: absolute; bottom: 0; margin-bottom: 20px; width: 100px; margin-left: 15px;">
-            <a href="detail.php" style="color: red; text-decoration: none;">Kembali</a>
-        </button>
-    </div>
 </body>
 
 </html>

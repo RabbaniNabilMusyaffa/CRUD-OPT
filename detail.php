@@ -13,18 +13,18 @@
 
 <body>
     <nav>
-        <div class="navbar-title">Detail Data Siswa</div>
+        <div class="navbar-title">Halaman Data Siswa</div>
         <div class="navbar-buttons">
             <a class="btnCreate" href="create.php">Tambah Data Siswa</a>
             <a class="btnLogout" href="logout.php">Log out</a>
         </div>
     </nav>
-    <table cellspacing="3" border="1" cellpadding="0" colspan="3" width="100%">
-        <thead>
+    <table border="1" bordercolor="silver" cellpadding="10" colspan="3">
+        <thead rowspan="4">
             <th rowspan="4">No</th>
             <th rowspan="4">Id</th>
             <th rowspan="4">Username</th>
-            <th rowspan="4">Password</th>
+            <!-- <th hidden rowspan="4">Password</th> -->
             <th rowspan="4">Foto</th>
             <th rowspan="4" colspan="2">Aksi</th>
         </thead>
@@ -42,14 +42,13 @@
                     <?= $fetch['id']; ?>
                 </td>
                 <td class="nama">
-                    <?= $fetch['username']; ?>
+                    <a class="nameLink" href="detailSiswa.php?id=<?= $fetch['id']; ?>"><?= $fetch['username']; ?></a>
                 </td>
-                <td>
+                <td hidden>
                     <?= $fetch['password']; ?>
                 </td>
 
-                <td align="center"><img style="width: 150px; border-radius: 50px; border: 5px solid #6495ED;"
-                        src="foto/<?= $fetch['foto']; ?>" alt="<?= $fetch['foto'] ?>">
+                <td align="center"><img class="foto" src="foto/<?= $fetch['foto']; ?>" alt="<?= $fetch['foto'] ?>">
                 </td>
                 <td name="edit" align="center"><a class="edit" href="update.php?id=<?php echo $fetch['id']; ?>">EDIT</a>
                 </td>

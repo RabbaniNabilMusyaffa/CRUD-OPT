@@ -6,7 +6,7 @@ include "conn.php";
 
 $user = $_POST['username'];
 $pass = $_POST['password'];
-$error = "Username atau password salah. Silakan coba lagi.";
+$error = "Username atau password salah.<br> <a href='index.php'>Silahkan coba lagi</a>";
 
 $sql = "SELECT * FROM siswa WHERE username='$user' AND password='$pass'";
 $result = mysqli_query($conn, $sql);

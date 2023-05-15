@@ -1,10 +1,21 @@
+body {
+  background-color: silver;
+}
+
 h1 {
   text-align: center;
 }
 
+.hidetext {
+  -webkit-text-security: disc;
+}
+
 table {
   border-collapse: collapse;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 50%;
   font-family: Arial, sans-serif;
   margin-top: 35px;
 }
@@ -15,16 +26,22 @@ table td {
   text-align: center;
 }
 
-table td {
-  background-color: aquamarine;
+th {
+  color: white;
 }
 
-.nama:hover {
-  color: blue;
+.nama .nameLink {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+
+.nama .nameLink:hover {
+  color: darkorchid;
 }
 
 table th {
-  background-color: skyblue;
+  background-color: black;
 }
 
 table td img {
@@ -34,17 +51,19 @@ table td img {
 nav {
   display: flex;
   justify-content: space-between;
+  border-radius: 20px;
   align-items: center;
   padding: 15px;
-  background-color: skyblue;
+  background-color: black;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-title {
   font-size: 1.5rem;
   font-weight: bold;
+  margin-left: 20px;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: whitesmoke;
 }
 
 .navbar-buttons {
@@ -72,7 +91,7 @@ nav {
 }
 
 .edit:hover {
-  background-color: black;
+  background-color: silver;
   color: #daa520;
 }
 
@@ -87,12 +106,13 @@ nav {
 }
 
 .delete:hover {
-  background-color: black;
+  background-color: silver;
   color: red;
 }
 
 .navbar-buttons .btnLogout {
   margin-left: 10px;
+  margin-right: 10px;
   padding: 10px;
   background-color: red;
   color: #fff;
@@ -102,11 +122,23 @@ nav {
 }
 
 .navbar-buttons a:hover {
-  background-color: whitesmoke;
-  color: green;
+  background-color: black;
+  color: #4caf50;
 }
 
 .navbar-buttons .btnLogout:hover {
-  background-color: gray;
-  color: maroon;
+  background-color: black;
+  color: red;
+}
+
+.foto {
+  box-shadow: 5px 3px 5px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  width: 150px;
+  border-radius: 20px;
+}
+
+.foto:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 3px 5px 3px #df80ff;
 }

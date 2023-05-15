@@ -12,13 +12,13 @@
 		<h1>Login</h1>
 		<form method="post" action="login_request.php">
 			<label for="username">
-				<i class="fas fa-user"></i>
+				<i class="fas fa-user">Username: </i>
 			</label>
-			<input type="text" name="username" placeholder="Username" required>
+			<input type="text" name="username" placeholder="USERNAME" required>
 			<label for="password">
-				<i class="fas fa-lock"></i>
+				<i class="fas fa-lock">Password: </i>
 			</label><br><br>
-			<input type="password" name="password" placeholder="Password" required>
+			<input type="password" name="password" placeholder="PASSWORD" required>
 			<input type="submit" value="Login">
 		</form>
 	</div>
