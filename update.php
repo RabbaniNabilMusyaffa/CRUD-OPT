@@ -51,7 +51,8 @@
                 <tr>
                     <td>Foto</td>
                     <td>:</td>
-                    <td><input type="file" name="foto" id="foto" /> <span name="old" id="old" value="<?= $fetch['foto'] ?>"><?php echo $fetch['foto'] ?></span></td>
+                    <td><input required type="file" name="foto" id="foto" /> <span name="old" id="old"
+                            value="<?= $fetch['foto'] ?>"><?php echo $fetch['foto'] ?></span></td>
                 </tr>
 
 
